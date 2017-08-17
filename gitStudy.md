@@ -24,4 +24,24 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 合并指定分支到当前分支:  `git merge dev`(在master分支上执行可以将dev分支合并到主分支)
 
+​	合并时，加上`--no-ff`参数就可以用普通模式合并,例`git merge --no-ff -m "merge with no-ff" dev`
+
 删除分支：`git branch -d dev`  删除dev分支
+
+​	如果要丢弃一个没有被合并过的分支，可以通过`git branch -D <name>`强行删除。
+
+# 解决冲突
+
+查看分支合并情况`$ git log --graph --pretty=oneline --abbrev-commit`   `git log --graph`
+
+# Bug分支
+
+把当前工作现场“储藏”起来: `git stash`
+
+查看"储藏区": `git stash list`
+
+从"储藏区"恢复到工作区: `git stash apply`  但是恢复后,stash内容并不删除,需要用`git stash drop`来删除;
+
+恢复的同时把stash内容也删除: `git stash pop`
+
+查看"储藏区": `git stash list`  恢复指定的 `git stash apply stash@{0}`
