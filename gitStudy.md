@@ -30,6 +30,12 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 ​	如果要丢弃一个没有被合并过的分支，可以通过`git branch -D <name>`强行删除。
 
+删除远程分支：`git push origin --delete develop` 或者 `git push origin  :develop`
+
+```shell
+git fetch origin temp:temp  //拉取远程库temp分支的代码到本地的temp分支，如果不存在temp分支，将自动创建temp分支
+```
+
 # 解决冲突
 
 查看分支合并情况`$ git log --graph --pretty=oneline --abbrev-commit`   `git log --graph`
