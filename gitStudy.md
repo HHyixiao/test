@@ -14,6 +14,8 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 从远程clone ` git clone git@github.com:HHyixiao/test.git`
 
+查看远程`git remote -v`
+
 # 分支
 
 创建`dev`分支，然后切换到`dev`分支：`git checkout -b dev`
@@ -51,3 +53,9 @@ git fetch origin temp:temp  //拉取远程库temp分支的代码到本地的temp
 恢复的同时把stash内容也删除: `git stash pop`
 
 查看"储藏区": `git stash list`  恢复指定的 `git stash apply stash@{0}`
+
+
+
+# git版本控制：如何处理当前分支为*（no branch）的情况
+
+git checkout -b 分支名；此时新创建的分支与*（no branch）软件一样，然后切换到主分支，合并
