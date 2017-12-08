@@ -12,7 +12,7 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 
 
-从远程clone ` git clone git@github.com:HHyixiao/test.git`
+从远程clone `git clone git@github.com:HHyixiao/test.git`
 
 查看远程`git remote -v`
 
@@ -40,7 +40,9 @@ git fetch origin temp:temp  //拉取远程库temp分支的代码到本地的temp
 
 # 解决冲突
 
-查看分支合并情况`$ git log --graph --pretty=oneline --abbrev-commit`   `git log --graph`
+查看分支合并情况`git log --graph --pretty=oneline --abbrev-commit`   `git log --graph`
+
+查看版本记录  `git log --pretty=oneline`
 
 # Bug分支
 
@@ -54,7 +56,7 @@ git fetch origin temp:temp  //拉取远程库temp分支的代码到本地的temp
 
 查看"储藏区": `git stash list`  恢复指定的 `git stash apply stash@{0}`
 
-
+# 查看git版本
 
 # git版本控制：如何处理当前分支为*（no branch）的情况
 
