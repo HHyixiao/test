@@ -8,6 +8,8 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 $ ssh-keygen -t rsa
 ```
 
+git 记住账号密码
+git config --global credential.helper store
 
 要关联一个远程库，使用命令`git remote add origin git@server-name:path/repo-name.git`；
 
@@ -59,7 +61,6 @@ git fetch origin temp:temp  //拉取远程库temp分支的代码到本地的temp
 
 查看"储藏区": `git stash list`  恢复指定的 `git stash apply stash@{0}`
 
-# 查看git版本
 
 # git版本控制：如何处理当前分支为*（no branch）的情况
 
