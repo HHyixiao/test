@@ -69,6 +69,6 @@ git fetch origin temp:temp  //拉取远程库temp分支的代码到本地的temp
 git checkout -b 分支名；此时新创建的分支与*（no branch）软件一样，然后切换到主分支，合并
 
 
-qqqa
+
 
 
