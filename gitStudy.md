@@ -17,6 +17,10 @@ git config --global credential.helper store
 
 关联后，使用命令`git push -u origin master`第一次推送master分支的所有内容，-u 关联分支；
 
+只要服务器的工作目录是干净的（没有未提交的变更），你 push 的改动就会直接体现在服务器的工作目录下:
+```shell
+git config receive.denyCurrentBranch updateInstead
+```
 
 
 从远程clone `git clone git@github.com:HHyixiao/test.git`
